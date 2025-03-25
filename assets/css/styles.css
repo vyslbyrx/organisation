@@ -64,7 +64,9 @@ body {
 .border-amber-600 { border-color: var(--amber-600); }
 .border-amber-700 { border-color: var(--amber-700); }
 
-
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--amber-600), var(--amber-700));
+}
 
 .swiper-button-prev:after {
   content: 'Önceki';
