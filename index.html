@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lüks Organizasyon</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-white">
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-lg fixed w-full z-10">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="assets/images/logo.svg" alt="Logo" class="h-10">
+        </a>
+
+        <!-- Desktop Menü (Büyük ekranlarda görünen) -->
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-800 hover:text-amber-600 font-medium">Ana Sayfa</a>
+          <a href="about.html" class="text-gray-800 hover:text-amber-600 font-medium">Hakkımızda</a>
+          <a href="services.html" class="text-gray-800 hover:text-amber-600 font-medium">Hizmetler</a>
+          <a href="gallery.html" class="text-gray-800 hover:text-amber-600 font-medium">Galeri</a>
+          <a href="contact.html" class="text-gray-800 hover:text-amber-600 font-medium">İletişim</a>
+        </div>
+
+        <!-- Mobil Menü Butonu -->
+        <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobil Menü (Açılır kapanır) -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <a href="index.html" class="block py-2 text-gray-800 hover:text-amber-600">Ana Sayfa</a>
+        <a href="about.html" class="block py-2 text-gray-800 hover:text-amber-600">Hakkımızda</a>
+        <a href="services.html" class="block py-2 text-gray-800 hover:text-amber-600">Hizmetler</a>
+        <a href="gallery.html" class="block py-2 text-gray-800 hover:text-amber-600">Galeri</a>
+        <a href="contact.html" class="block py-2 text-gray-800 hover:text-amber-600">İletişim</a>
+      </div>
+    </div>
+  </nav>
+
+ <!-- Hero Banner Section -->
+<!-- Slider Banner Section -->
+<section class="relative bg-gray-900 text-white h-screen max-h-[800px] overflow-hidden">
+    <!-- Slider Container -->
+    <div class="swiper banner-slider h-full">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 - Düğün -->
+        <div class="swiper-slide relative">
+          <!-- Arkaplan Resmi -->
+          <div class="absolute inset-0 bg-black opacity-60 z-0"></div>
+          <img 
+            src="assets/images/wedding-2.jpg" 
+            alt="Lüks Düğün Organizasyonu" 
+            class="absolute inset-0 w-full h-full object-cover z-0 opacity-50"
+          >
+          
+          <!-- İçerik -->
+          <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fadeIn">
+                Hayalinizdeki <span class="text-amber-500">Düğün</span> İçin
+              </h1>
+              <p class="text-xl md:text-2xl mb-8 text-gray-300">
+                Unutulmaz bir düğün için profesyonel organizasyon çözümleri.
+              </p>
+              <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="wedding.html" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-medium transition transform hover:scale-105">
+                  Düğün Paketleri
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Slide 2 - İftar -->
+        <div class="swiper-slide relative">
+          <div class="absolute inset-0 bg-black opacity-60 z-0"></div>
+          <img 
+            src="assets/images/iftar-2.jpg" 
+            alt="Kurumsal İftar Organizasyonu" 
+            class="absolute inset-0 w-full h-full object-cover z-0 opacity-50"
+          >
+          <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Şirketinize Özel <span class="text-amber-500">İftar</span>
+              </h1>
+              <p class="text-xl md:text-2xl mb-8 text-gray-300">
+                Kurumsal iftar yemeklerinde kalite ve profesyonellik.
+              </p>
+              <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="iftar.html" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-medium transition transform hover:scale-105">
+                  İftar Menüleri
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Slide 3 - Yılbaşı -->
+        <div class="swiper-slide relative">
+          <div class="absolute inset-0 bg-black opacity-60 z-0"></div>
+          <img 
+            src="assets/images/newyear-2.jpg" 
+            alt="Yılbaşı Organizasyonu" 
+            class="absolute inset-0 w-full h-full object-cover z-0 opacity-50"
+          >
+          <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Unutulmaz <span class="text-amber-500">Yılbaşı</span> Kutlaması
+              </h1>
+              <p class="text-xl md:text-2xl mb-8 text-gray-300">
+                2024'e özel lüks yılbaşı organizasyonları.
+              </p>
+              <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="newyear.html" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-medium transition transform hover:scale-105">
+                  Yılbaşı Programı
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Slider Kontrolleri -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  
+    <!-- Aşağı Kaydırma Oku -->
+    <a href="#services" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </a>
+  </section>
+  
+  <!-- Swiper JS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  <!-- Slider Ayarları -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      new Swiper('.banner-slider', {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true
+        },
+      });
+    });
+  </script>
+    <!-- Hero Video Arka Planlı Section 
+
+  <div class="absolute inset-0 overflow-hidden z-0">
+    <video autoplay muted loop class="w-full h-full object-cover">
+      <source src="assets/videos/hero-background.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  -->
+
+  <!-- Gradient Arka Plan 
+
+  <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-amber-900 z-0"></div>
+    
+  -->
+
+  <!-- Splide.js ile slider -->
+
+  <!-- Örnek: Splide.js ile slider
+<div class="splide">
+    <div class="splide__track">
+      <div class="splide__list">
+        <div class="splide__slide">
+          <img src="assets/images/hero-1.jpg" class="w-full h-screen object-cover">
+        </div>
+        <div class="splide__slide">
+          <img src="assets/images/hero-2.jpg" class="w-full h-screen object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+
+-->
+
+
+
+<!-- Hizmetler Section -->
+    <!-- Hizmetler Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+          <!-- Başlık ve Açıklama -->
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span class="text-amber-600">Hizmetlerimiz</span> ile Öne Çıkın
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Unutulmaz anılar yaratmak için özel olarak tasarlanmış organizasyon çözümlerimizi keşfedin.
+            </p>
+          </div>
+      
+          <!-- Hizmet Kartları -->
+          <div id="services-container" data-show="4" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+           
+          </div>
+      
+          <!-- Tüm Hizmetler Butonu -->
+    <div class="text-center mt-12">
+        <a 
+          href="services.html" 
+          class="inline-block bg-gray-900 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-medium transition"
+        >
+          Tüm Hizmetlerimizi Görün
+        </a>
+      </div>
+          
+        </div>
+      </section>
+
+
+  <!-- Portfolyo & Referanslar Section -->
+<section id="portfolio" class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Başlık ve Filtreleme -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+          Gerçekleştirdiğimiz <span class="text-amber-600">Etkinlikler</span>
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
+          Müşterilerimiz için hayata geçirdiğimiz unutulmaz organizasyonlardan örnekler.
+        </p>
+        
+        <!-- Filtreleme Butonları (Opsiyonel) -->
+        <div class="flex flex-wrap justify-center gap-2 mb-8">
+          <button class="px-4 py-2 bg-amber-600 text-white rounded-full text-sm font-medium">Tümü</button>
+          <button class="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200">Düğünler</button>
+          <button class="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200">İftarlar</button>
+          <button class="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200">Yılbaşı</button>
+        </div>
+      </div>
+  
+      <!-- Portfolyo Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Öğe 1: Düğün -->
+        <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <img 
+            src="assets/images/wedding-1.jpg" 
+            alt="Lüks Düğün Organizasyonu" 
+            class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+          <div class="absolute bottom-0 left-0 p-6 text-white">
+            <h3 class="text-xl font-bold mb-1">Ayşe & Mehmet'in Düğünü</h3>
+            <p class="text-sm text-gray-300">350 kişi · Hilton İstanbul</p>
+          </div>
+          <!-- Hover'da Referans Yorumu -->
+          <div class="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition p-6">
+            <div class="text-white text-center">
+              <svg class="w-8 h-8 mx-auto mb-3 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+              </svg>
+              <p class="italic">"Her detay mükemmeldi! Profesyonel ekibe teşekkürler."</p>
+              <p class="mt-2 font-medium">- Ayşe Y.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Öğe 2: İftar -->
+        <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <img 
+            src="assets/images/iftar-1.jpg" 
+            alt="Kurumsal İftar Yemeği" 
+            class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+          <div class="absolute bottom-0 left-0 p-6 text-white">
+            <h3 class="text-xl font-bold mb-1">ABC Şirketi İftarı</h3>
+            <p class="text-sm text-gray-300">500 kişi · Raffles Otel</p>
+          </div>
+          <!-- Hover'da Referans Yorumu -->
+          <div class="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition p-6">
+            <div class="text-white text-center">
+              <svg class="w-8 h-8 mx-auto mb-3 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+              </svg>
+              <p class="italic">"Çalışanlarımız için harika bir ramazan deneyimi oldu."</p>
+              <p class="mt-2 font-medium">- ABC Şirketi İK Direktörü</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Öğe 3: Yılbaşı -->
+        <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <img 
+            src="assets/images/newyear-1.jpg" 
+            alt="Yılbaşı Partisi" 
+            class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+          <div class="absolute bottom-0 left-0 p-6 text-white">
+            <h3 class="text-xl font-bold mb-1">2024 Yılbaşı Balosu</h3>
+            <p class="text-sm text-gray-300">200 kişi · Swissotel The Bosphorus</p>
+          </div>
+          <!-- Hover'da Referans Yorumu -->
+          <div class="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition p-6">
+            <div class="text-white text-center">
+              <svg class="w-8 h-8 mx-auto mb-3 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+              </svg>
+              <p class="italic">"Yeni yıla muhteşem bir giriş yaptık, her şey kusursuzdu!"</p>
+              <p class="mt-2 font-medium">- Defne K.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Tümünü Gör Butonu -->
+      <div class="text-center mt-12">
+        <a 
+          href="portfolio.html" 
+          class="inline-block bg-gray-900 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-medium transition"
+        >
+          Daha Fazla Etkinlik Gör
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+<!-- WhatsApp İletişim Section -->
+<section id="contact" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <!-- Başlık -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+          Bize <span class="text-green-600">WhatsApp</span>'tan Ulaşın
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          7/24 aktif destek hattımızla anında yanıt alın!
+        </p>
+      </div>
+  
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- WhatsApp QR Kod & Buton -->
+        <div class="bg-gray-50 rounded-xl p-8 shadow-sm text-center">
+          <div class="max-w-xs mx-auto mb-6 p-4 bg-white rounded-lg">
+            <img 
+              src="assets/images/whatsapp-qr.svg" 
+              alt="WhatsApp QR Kod" 
+              class="w-full h-auto border-4 border-green-100"
+            >
+            <p class="mt-3 text-sm text-gray-500">QR kodu okutarak sohbete başlayın</p>
+          </div>
+          
+          <a 
+            href="https://wa.me/905551234567?text=Merhaba,%20organizasyon%20hakkında%20bilgi%20almak%20istiyorum." 
+            target="_blank"
+            class="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-medium transition transform hover:scale-105"
+          >
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp'tan Mesaj Gönder
+          </a>
+          
+          <p class="mt-4 text-gray-500 text-sm">
+            <strong>Hızlı Yanıt:</strong> Mesai saatlerinde ortalama 5 dakikada dönüş yapıyoruz.
+          </p>
+        </div>
+  
+        <!-- Diğer İletişim Kanalları -->
+        <div class="space-y-6">
+          <!-- Telefon -->
+          <div class="flex items-start bg-gray-50 p-6 rounded-xl">
+            <div class="bg-green-100 p-3 rounded-full mr-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 mb-1">Telefonla Arayın</h3>
+              <p class="text-gray-600">
+                <a href="tel:+905551234567" class="hover:text-green-600 transition font-medium text-lg">+90 555 123 45 67</a>
+              </p>
+              <p class="text-sm text-gray-500 mt-1">Hafta içi 09:00 - 18:00</p>
+            </div>
+          </div>
+  
+          <!-- E-posta -->
+          <div class="flex items-start bg-gray-50 p-6 rounded-xl">
+            <div class="bg-green-100 p-3 rounded-full mr-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 mb-1">E-posta Gönderin</h3>
+              <p class="text-gray-600">
+                <a href="mailto:info@organizasyon.com" class="hover:text-green-600 transition font-medium text-lg">info@organizasyon.com</a>
+              </p>
+              <p class="text-sm text-gray-500 mt-1">24 saat içinde yanıt veriyoruz</p>
+            </div>
+          </div>
+  
+          <!-- Sosyal Medya -->
+          <div class="flex items-start bg-gray-50 p-6 rounded-xl">
+            <div class="bg-green-100 p-3 rounded-full mr-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Sosyal Medya</h3>
+              <div class="flex space-x-3">
+                <a href="#" class="bg-gray-200 hover:bg-green-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="#" class="bg-gray-200 hover:bg-green-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
+                </a>
+                <a href="#" class="bg-gray-200 hover:bg-green-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Harita (Opsiyonel) -->
+      <div class="mt-12 rounded-xl overflow-hidden shadow-lg border-4 border-green-100">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.279637145382!2d29.01258331541186!3d41.04417997929863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a24975fe5d%3A0x2a0a5f5e9a5a5a5a!2sBe%C5%9Fikta%C5%9F%2C%20%C4%B0stanbul!5e0!3m2!1str!2str!4v1620000000000!5m2!1str!2str" 
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer Section -->
+<footer class="bg-gray-900 text-white pt-12 pb-6">
+    <div class="container mx-auto px-4">
+      <!-- Üst Kısım: 4 Sütun (Hızlı Linkler, Hizmetler, İletişim, Sosyal Medya) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <!-- 1. Sütun: Logo & Hakkında -->
+        <div>
+          <img src="assets/images/logo-white.png" alt="Logo" class="h-10 mb-4">
+          <p class="text-gray-300 text-sm">
+            Lüks ve unutulmaz organizasyonlar için profesyonel çözümler sunuyoruz.
+          </p>
+        </div>
+  
+        <!-- 2. Sütun: Hızlı Linkler -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 border-b border-amber-600 pb-2">Hızlı Linkler</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-300 hover:text-amber-500 transition">Ana Sayfa</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-amber-500 transition">Hakkımızda</a></li>
+            <li><a href="services.html" class="text-gray-300 hover:text-amber-500 transition">Hizmetler</a></li>
+            <li><a href="gallery.html" class="text-gray-300 hover:text-amber-500 transition">Galeri</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-amber-500 transition">İletişim</a></li>
+          </ul>
+        </div>
+  
+        <!-- 3. Sütun: Hizmetler -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 border-b border-amber-600 pb-2">Hizmetler</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-300 hover:text-amber-500 transition">Düğün Organizasyonu</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-amber-500 transition">İftar Yemekleri</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-amber-500 transition">Yılbaşı Partileri</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-amber-500 transition">Kurumsal Etkinlikler</a></li>
+          </ul>
+        </div>
+  
+        <!-- 4. Sütun: İletişim & Sosyal Medya -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 border-b border-amber-600 pb-2">Bize Ulaşın</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex items-start">
+              <svg class="h-5 w-5 mr-2 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>123 Organizasyon Caddesi, İstanbul</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="h-5 w-5 mr-2 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <a href="tel:+905551234567">+90 555 123 45 67</a>
+            </li>
+            <li class="flex items-center">
+              <svg class="h-5 w-5 mr-2 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <a href="mailto:info@organizasyon.com">info@organizasyon.com</a>
+            </li>
+          </ul>
+  
+          <!-- Sosyal Medya İkonları -->
+          <div class="mt-4 flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-amber-500 transition">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-amber-500 transition">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-amber-500 transition">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-amber-500 transition">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Alt Kısım: Telif Hakkı -->
+      <div class="border-t border-gray-800 pt-6 text-center text-gray-400 text-sm">
+        <p>© 2025 Lüks Organizasyon. Tüm hakları saklıdır.</p>
+        <div class="mt-2">
+          <a href="#" class="hover:text-amber-500 transition">Gizlilik Politikası</a> | 
+          <a href="#" class="hover:text-amber-500 transition">Çerezler</a> | 
+          <a href="#" class="hover:text-amber-500 transition">Kullanım Şartları</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+[
+  {
+    "title": "Düğün Organizasyonu",
+    "image": "assets/images/wedding-1.jpg",
+    "description": [
+      "Mekan seçimi ve dekorasyon",
+      "Özel temalı düğün konseptleri",
+      "Profesyonel catering & pasta tasarımı",
+      "Fotoğraf/Videografi ekibi"
+    ],
+    "prompt": "Luxury wedding venue with floral arches by the Bosphorus, bride and groom dancing under crystal chandeliers, golden hour lighting, professional photography style, 8K resolution",
+    "details": {
+      "paketler": [
+        {
+          "name": "Standart Düğün Paketi",
+          "price": "₺25.000",
+          "features": ["100 kişi", "Temel dekorasyon", "Standart menü"]
+        },
+        {
+          "name": "Premium Düğün Paketi",
+          "price": "₺50.000",
+          "features": ["250 kişi", "Lüks dekorasyon", "Gourmet menü", "DJ performansı"]
+        }
+      ],
+      "ekHizmetler": [
+        "Nikah şekeri tasarımı",
+        "Gelin/damat dans koreografisi",
+        "Havai fişek gösterisi"
+      ],
+      "referanslar": [
+        "Asya & Emre - Çırağan Sarayı (2023)",
+        "Deniz & Can - Hilton İstanbul (2022)"
+      ]
+    }
+  },
+  {
+    "title": "Kurumsal İftar",
+    "image": "assets/images/iftar-1.jpg",
+    "description": [
+      "500+ kişilik şirket iftarları",
+      "Geleneksel ve fusion menü seçenekleri",
+      "Mevsime özel dekorasyon",
+      "Program yönetimi ve sunuculuk"
+    ],
+    "prompt": "Grand corporate iftar in Ottoman-style venue, long tables with gold-trimmed tableware, giant Ramadan lanterns, waiters serving traditional dishes, warm lighting, aerial view",
+    "details": {
+      "paketler": [
+        {
+          "name": "Temel İftar Paketi",
+          "price": "₺150/kişi",
+          "features": ["Geleneksel menü", "Temel dekorasyon"]
+        },
+        {
+          "name": "Executive İftar Paketi",
+          "price": "₺300/kişi",
+          "features": ["Fusion menü", "Lüks dekor", "Sunucu", "Özel program"]
+        }
+      ],
+      "ekHizmetler": [
+        "Ramazan özel hediyelikler",
+        "Sahur organizasyonu",
+        "Kurumsal fotoğraf çekimi"
+      ],
+      "referanslar": [
+        "ABC Şirketi - Raffles Otel (2023)",
+        "XYZ Holding - Swissotel (2022)"
+      ]
+    }
+  },
+  {
+    "title": "Nişan & Sünnet Organizasyonu",
+    "image": "assets/images/engagement-1.jpg",
+    "description": [
+      "Özel konsept tasarımı",
+      "Çocuk aktiviteli sünnet şölenleri",
+      "Butik nişan törenleri",
+      "Anlık fotoğraf baskı servisi"
+    ],
+    "prompt": "Elegant engagement party in garden setting, floral centerpieces, ring ceremony moment, golden decor accents, natural sunlight filtering through trees"
+  },
+  {
+    "title": "Lansman & Fuarlar",
+    "image": "assets/images/launch-1.jpg",
+    "description": [
+      "Ürün tanıtım etkinlikleri",
+      "Sektörel fuar organizasyonları",
+      "Markalı promosyon çözümleri",
+      "VIP konuk yönetimi"
+    ],
+    "prompt": "High-tech product launch event with LED walls, interactive displays, well-dressed attendees networking, modern minimalist stage design, blue accent lighting"
+  },
+  {
+    "title": "Özel Gün Kutlamaları",
+    "image": "assets/images/specialday-1.jpg",
+    "description": [
+      "Doğum günü partileri",
+      "Yıldönümü kutlamaları",
+      "Bebek shower organizasyonları",
+      "Sürpriz etkinlik tasarımı"
+    ],
+    "prompt": "Surprise birthday party setup with balloon garlands, 'Happy Birthday' neon sign, cake table with macarons, guests hiding before surprise moment"
+  },
+  {
+    "title": "Açılış & Galalar",
+    "image": "assets/images/gala-1.jpg",
+    "description": [
+      "Mağaza/hotel açılışları",
+      "Kırmızı halı galaları",
+      "Basın organizasyonları",
+      "Sponsorluk yönetimi"
+    ],
+    "prompt": "Grand hotel opening gala with red carpet, chandelier-lit ballroom, waiters serving champagne, press photographers, elegant guests in evening wear"
+  }
+]
